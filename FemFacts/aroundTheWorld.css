@@ -1,0 +1,140 @@
+body {
+  background-color: #fff1f2; /* Light pink background */
+  font-family: 'Roboto', sans-serif; /* Google Font */
+  color: #333; /* Dark text color */
+}
+
+.gallery-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
+}
+
+.gallery-item {
+  position: relative;
+  flex: 0 0 33.33%; /* Show 3 gallery items at a time */
+  scroll-snap-align: center;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff; /* White background for each item */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  margin: 10px; /* Add margin between items */
+}
+
+.gallery-item img {
+  width: 100%;
+  max-width: 200px; /* Adjust as needed */
+  height: auto;
+  border-radius: 5px;
+}
+
+.gallery-item h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ea9fd2; /* Pink color */
+}
+
+.gallery-item p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.inventor-info {
+  text-align: left;
+  padding: 10px;
+  display: flex;
+}
+
+.inventor-info img {
+  width: 80px; /* Adjust size as needed */
+  height:80px; 
+  object-fit: cover;
+  margin-right: 10px; 
+  border-radius: 50%; /* Make the image circular */
+}
+
+.invention-description {
+  text-align: left;
+  padding: 10px;
+}
+
+.worldMap{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mapDiv {
+  text-align: center;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #ea9fd2;
+}
+
+.heading {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links li {
+  list-style: none;
+  padding: 0 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 14px 16px;
+  white-space: nowrap;
+}
+
+.nav-links a:hover:not(.active) {
+  background-color: #333;
+}
+
+.nav-links li a.active {
+  background-color: #333;
+}
+
+.page-title{
+  text-align:center; 
+  color: #ea9fd2; 
+  font-size:50px; 
+}
+
+.page-title {
+  font-size: 40px;
+}
+
+.clickOn {
+  font-size: 20px; 
+}
